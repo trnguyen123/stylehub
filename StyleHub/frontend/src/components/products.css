@@ -1,0 +1,79 @@
+/* Product.css */
+
+/* Các kiểu dáng cho grid sản phẩm */
+.products-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mỗi dòng chứa 4 sản phẩm */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px;
+    justify-items: center; /* Căn giữa nội dung */
+}
+
+/* Thiết kế thẻ sản phẩm */
+.product-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 300px; /* Giới hạn chiều rộng tối đa của thẻ sản phẩm */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng cho thẻ sản phẩm */
+    transition: transform 0.2s; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng hover cho thẻ sản phẩm */
+.product-card:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Hình ảnh sản phẩm với kích thước vuông 300px */
+.product-card img {
+    width: 300px; /* Kích thước hình ảnh */
+    height: 300px; /* Kích thước hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border-radius: 10px; /* Đường viền cho hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+
+/* Phần tên sản phẩm */
+.product-card h3 {
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif; /* Sử dụng font Montserrat */
+    font-size: 18px;
+    color: #333;
+}
+
+/* Phần giá tiền */
+.product-card p {
+    color: #FF5733; /* Thay đổi màu sắc cho giá tiền */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Sử dụng font Montserrat */
+    font-size: 16px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .pagination button.active {
+    background-color: #000000;
+    color: white;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #f0f0f0;
+  }
+  
